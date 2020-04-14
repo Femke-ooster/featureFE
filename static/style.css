@@ -1,0 +1,179 @@
+font-family: 'Hind', sans-serif;
+
+/*NAV*/
+body {
+  font-family: 'Hind', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  position: static;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin: 1em;
+}
+
+li {
+  list-style: none;
+
+}
+
+a {
+    margin: 1em;
+    text-decoration: none;
+}
+
+/*ICONS*/
+.img {
+  position: absolute;
+  width: 2.3em;
+}
+
+#imgBoost {
+  right: 7.6em;
+}
+
+#imgLikes {
+  right: 4.5em;
+}
+
+#imgMessages {
+  right: 1.2em;
+}
+
+#home {
+  width: 9em;
+}
+
+/*CURRENTPAGE HIGHLIGHTS*/
+a div.currentpage {
+  position: absolute;
+  top: 3.5em;
+  width: 5px;
+  height: 5px;
+  background-color: #EB5014;
+  border-radius: 50%;
+}
+
+#currentBoost{
+  right: 8.54em;
+}
+
+#currentLikes{
+  right: 5.46em;
+}
+
+#currentMessages{
+  right: 2.1em;
+}
+/*END NAV*/
+
+
+/*EXTRA NAV*/
+#boost.#boostActive {
+    visibility: visible;
+}
+/*END EXTRA NAV*/
+
+
+/*MAIN*/
+h2 {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+
+p, h2 {
+  font-family: 'Hind', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.person {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 20px;
+  background-color: #EB5014;
+  color: white;
+  max-width: 25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15em;
+}
+
+#hiddenProfile {
+  display: none;
+}
+
+#wantBoost {
+  display: none; 
+}
+/*END MAIN*/
+
+
+/*NOTIFICATION*/
+/*main color: #EB5014*/
+.notification {
+  background-color: red;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  color: white;
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+.number {
+  position: relative;
+  top: .25em;
+  font-size: .75em;
+}
+/*END NOTIFICATION*/
+
+
+/*ANIMATION*/
+#noteBoost {
+  position: absolute;
+  top: 1em;
+  right: 7.2em;
+  animation-name: animation;
+  animation-duration: .8s;
+}
+
+#noteLikes {
+  position: absolute;
+  top: 1em;
+  right: 4em;
+  animation-name: animation;
+  animation-duration: 1s;
+}
+
+#noteMessages {
+  position: absolute;
+  top: 1em;
+  right: .7em;
+  animation-name: animation;
+  animation-duration: 1.2s;
+}
+@keyframes animation {
+  0% {top: -6em;}
+  60% {bottom: 6em;}
+  80% {bottom: 6em;}
+  100% {bottom: 2.5em;}
+}
+/*END ANIMATION*/
