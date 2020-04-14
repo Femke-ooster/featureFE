@@ -12,7 +12,7 @@ window.onload = function () {
 //Get the current page path.
 //Bron: Alen Simpson, 13 april 2018, https://www.youtube.com/watch?v=ZE7G_4u4CMY
 var patharray = location.pathname.split("/");
-var foldername = patharray[2];
+var foldername = patharray[3];
     
   if (foldername == "boost.html") {
   document.getElementById("currentBoost").className = "currentpage";
