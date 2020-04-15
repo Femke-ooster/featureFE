@@ -4,9 +4,9 @@ true, white: true*/
 /*eslint 'no-console':0*/
 /* exported myFunction */
 
-console.log('hellow :)');
+console.log("hellow :)");
 
-var pictures = ['static/images/plus.png', 'static/images/minus.png']; //closure
+var pictures = ["static/images/plus.png", "static/images/minus.png"]; //closure
 
 window.onload = function () {
 //Get the current page path.
@@ -35,11 +35,11 @@ function getBoost() {
     console.log("Activating getBoost");
     console.log("Boost page loaded");
     
-    document.getElementById("noBoost").style.display = 'none';
-    document.getElementById("wantBoost").style.display = 'inline';
+    document.getElementById("noBoost").style.display = "none";
+    document.getElementById("wantBoost").style.display = "inline";
 
-        var button = document.getElementById('button');
-        button.addEventListener('click', chance);
+        var button = document.getElementById("button");
+        button.addEventListener("click", chance);
 
         function chance() {
             var number = Math.floor((Math.random() * 10) ); //scoping
@@ -48,7 +48,7 @@ function getBoost() {
                 document.getElementById('image').src = pictures[0]; //closure
             } else {
                 console.log("You lost boosts!");
-                document.getElementById('image').src = pictures[1];
+                document.getElementById("image").src = pictures[1];
             }
     } 
 }
@@ -58,15 +58,15 @@ function getLikes() {
     console.log("Activating getLikes");
     console.log("Likes page loaded");
     
-    document.getElementById("hiddenProfile").style.display = 'inline';
+    document.getElementById("hiddenProfile").style.display = "inline";
         
         function Person(name, age) {
             this.name = name; //context
             this.age = age;
             console.log(name, age);
             
-                console.log('hello, my name is ' + this.name + ' and I am ' + this.age + ' years old!'); //closure
-                document.getElementById("person1").textContent = 'Hi there! My name is ' + this.name + ' and I am ' + this.age + ' years old.';     
+                console.log("hello, my name is " + this.name + " and I am " + this.age + " years old!"); //closure
+                document.getElementById("person1").textContent = "Hi there! My name is " + this.name + " and I am " + this.age + " years old.";     
             }
     
     john = new Person("John", 18); //hoisting
